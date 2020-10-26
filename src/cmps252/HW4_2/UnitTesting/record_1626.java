@@ -1,0 +1,95 @@
+package cmps252.HW4_2.UnitTesting;
+
+import static org.junit.jupiter.api.Assertions.*;
+import java.io.FileNotFoundException;
+import java.util.List;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import cmps252.HW4_2.Customer;
+import cmps252.HW4_2.FileParser;
+
+@Tag("29")
+class Record_1626 {
+
+	private static List<Customer> customers;
+
+	@BeforeAll
+	public static void init() throws FileNotFoundException {
+		customers = FileParser.getCustomers(Configuration.CSV_File);
+	}
+
+	@Test
+	@DisplayName("Record 1626: FirstName is Deana")
+	void FirstNameOfRecord1626() {
+		assertEquals("Deana", customers.get(1625).getFirstName());
+	}
+
+	@Test
+	@DisplayName("Record 1626: LastName is Kvilhaug")
+	void LastNameOfRecord1626() {
+		assertEquals("Kvilhaug", customers.get(1625).getLastName());
+	}
+
+	@Test
+	@DisplayName("Record 1626: Company is Wedemeyer Electronic Supply")
+	void CompanyOfRecord1626() {
+		assertEquals("Wedemeyer Electronic Supply", customers.get(1625).getCompany());
+	}
+
+	@Test
+	@DisplayName("Record 1626: Address is 3216 Geary Blvd")
+	void AddressOfRecord1626() {
+		assertEquals("3216 Geary Blvd", customers.get(1625).getAddress());
+	}
+
+	@Test
+	@DisplayName("Record 1626: City is San Francisco")
+	void CityOfRecord1626() {
+		assertEquals("San Francisco", customers.get(1625).getCity());
+	}
+
+	@Test
+	@DisplayName("Record 1626: County is San Francisco")
+	void CountyOfRecord1626() {
+		assertEquals("San Francisco", customers.get(1625).getCounty());
+	}
+
+	@Test
+	@DisplayName("Record 1626: State is CA")
+	void StateOfRecord1626() {
+		assertEquals("CA", customers.get(1625).getState());
+	}
+
+	@Test
+	@DisplayName("Record 1626: ZIP is 94118")
+	void ZIPOfRecord1626() {
+		assertEquals("94118", customers.get(1625).getZIP());
+	}
+
+	@Test
+	@DisplayName("Record 1626: Phone is 415-751-2999")
+	void PhoneOfRecord1626() {
+		assertEquals("415-751-2999", customers.get(1625).getPhone());
+	}
+
+	@Test
+	@DisplayName("Record 1626: Fax is 415-751-1158")
+	void FaxOfRecord1626() {
+		assertEquals("415-751-1158", customers.get(1625).getFax());
+	}
+
+	@Test
+	@DisplayName("Record 1626: Email is deana@kvilhaug.com")
+	void EmailOfRecord1626() {
+		assertEquals("deana@kvilhaug.com", customers.get(1625).getEmail());
+	}
+
+	@Test
+	@DisplayName("Record 1626: Web is http://www.deanakvilhaug.com")
+	void WebOfRecord1626() {
+		assertEquals("http://www.deanakvilhaug.com", customers.get(1625).getWeb());
+	}
+}
