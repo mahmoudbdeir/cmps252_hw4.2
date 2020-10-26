@@ -33,7 +33,7 @@ public class FileParser {
 	
 	private static Customer parseCustomer(String line) {
 		List<String> fields = new ArrayList<>();
-		for(String field: line.split(",")) {
+		for(String field: line.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)")) {
 			field = field.substring(1, field.length()-1); // Strip leading and trailing double quote
 			fields.add(field);
 		}
