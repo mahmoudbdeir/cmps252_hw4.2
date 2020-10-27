@@ -8,11 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileParser {
-	private String fname;
-	
-	public FileParser(String fname) {
-		this.fname = fname;
-	}
 	
 	public static ArrayList<Customer> getCustomers(String fname) throws FileNotFoundException {
 		ArrayList<Customer> customers = new ArrayList<>();
