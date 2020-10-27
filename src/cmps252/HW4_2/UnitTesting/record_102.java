@@ -25,7 +25,7 @@ class Record_102 {
 	@DisplayName("Record 102: FirstName is Marcel")
 	void FirstNameOfRecord102() {
 		assertEquals("Marcel", customers.get(101).getFirstName());
-	}
+	} 
 
 	@Test
 	@DisplayName("Record 102: LastName is Kolodziej")
