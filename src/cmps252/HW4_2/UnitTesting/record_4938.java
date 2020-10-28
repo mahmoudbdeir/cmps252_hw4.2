@@ -54,7 +54,7 @@ class Record_4938 {
 	@Test
 	@DisplayName("Record 4938: County is Providence")
 	void CountyOfRecord4938() {
-		assertEquals("Providence", customers.get(4937).getCounty());
+		assertEquals("Providence", customers.get(4937).getCountry());
 	}
 
 	@Test
