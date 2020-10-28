@@ -1,0 +1,195 @@
+
+C:\Users\student
+λ c\
+'c\' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\student
+λ cd \
+
+C:\
+λ md temp
+
+C:\
+λ cd temp
+
+C:\temp
+λ md hw4.2
+
+C:\temp
+λ cd hw4.2
+
+C:\temp\hw4.2
+λ git clone https://github.com/ismoaldon7/cmps252_hw4.2.git
+Cloning into 'cmps252_hw4.2'...
+remote: Enumerating objects: 5075, done.
+remote: Total 5075 (delta 0), reused 0 (delta 0), pack-reused 5075
+Receiving objects: 100% (5075/5075), 3.48 MiB | 333.00 KiB/s, done.
+Resolving deltas: 100% (4987/4987), done.
+Updating files: 100% (5050/5050), done.
+
+C:\temp\hw4.2
+λ git branch IbrahimMohammedOsman
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\temp\hw4.2
+λ git init
+Initialized empty Git repository in C:/temp/hw4.2/.git/
+
+C:\temp\hw4.2 (master)
+λ git branch IbrahimMohammedOsman
+fatal: Not a valid object name: 'master'.
+
+C:\temp\hw4.2 (master)
+λ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cmps252_hw4.2/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\temp\hw4.2 (master)
+λ git branch IbrahimMohammedOsman
+fatal: Not a valid object name: 'master'.
+
+C:\temp\hw4.2 (master)
+λ git branch ibrahimohammedosman
+fatal: Not a valid object name: 'master'.
+
+C:\temp\hw4.2 (master)
+λ git commit -m "CMPS 252 HW4.2"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cmps252_hw4.2/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\temp\hw4.2 (master)
+λ git branch IbrahimMohammedOsman
+fatal: Not a valid object name: 'master'.
+
+C:\temp\hw4.2 (master)
+λ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cmps252_hw4.2/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\temp\hw4.2 (master)
+λ git log
+fatal: your current branch 'master' does not have any commits yet
+
+C:\temp\hw4.2 (master)
+λ git add .
+warning: adding embedded git repository: cmps252_hw4.2
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> cmps252_hw4.2
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached cmps252_hw4.2
+hint:
+hint: See "git help submodule" for more information.
+
+C:\temp\hw4.2 (master)
+λ cd cmps252_hw4.2
+
+C:\temp\hw4.2\cmps252_hw4.2 (main -> origin)
+λ ls
+ 5000.csv   bin/  'HW 4.2.pdf'   LICENSE   README.md   src/
+
+C:\temp\hw4.2\cmps252_hw4.2 (main -> origin)
+λ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   bin/.gitignore
+        modified:   src/cmps252/HW4_2/Customer.java
+        modified:   src/cmps252/HW4_2/FileParser.java
+        modified:   src/cmps252/HW4_2/UnitTesting/Configuration.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\temp\hw4.2\cmps252_hw4.2 (main -> origin)
+λ git branch IbrahimMohammedOsmanMohammed
+
+C:\temp\hw4.2\cmps252_hw4.2 (main -> origin)
+λ git checkout IbrahimMohammedOsmanMohammed
+Switched to branch 'IbrahimMohammedOsmanMohammed'
+M       bin/.gitignore
+M       src/cmps252/HW4_2/Customer.java
+M       src/cmps252/HW4_2/FileParser.java
+M       src/cmps252/HW4_2/UnitTesting/Configuration.java
+
+C:\temp\hw4.2\cmps252_hw4.2 (IbrahimMohammedOsmanMohammed)
+λ git push -u origin IbrahimMohammedOsmanMohammed
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'IbrahimMohammedOsmanMohammed' on GitHub by visiting:
+remote:      https://github.com/ismoaldon7/cmps252_hw4.2/pull/new/IbrahimMohammedOsmanMohammed
+remote:
+To https://github.com/ismoaldon7/cmps252_hw4.2.git
+ * [new branch]      IbrahimMohammedOsmanMohammed -> IbrahimMohammedOsmanMohammed
+Branch 'IbrahimMohammedOsmanMohammed' set up to track remote branch 'IbrahimMohammedOsmanMohammed' from 'origin'.
+
+C:\temp\hw4.2\cmps252_hw4.2 (IbrahimMohammedOsmanMohammed -> origin)
+λ git push -u origin IbrahimMohammedOsmanMohammed
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'IbrahimMohammedOsmanMohammed' on GitHub by visiting:
+remote:      https://github.com/ismoaldon7/cmps252_hw4.2/pull/new/IbrahimMohammedOsmanMohammed
+remote:
+To https://github.com/ismoaldon7/cmps252_hw4.2.git
+ * [new branch]      IbrahimMohammedOsmanMohammed -> IbrahimMohammedOsmanMohammed
+Branch 'IbrahimMohammedOsmanMohammed' set up to track remote branch 'IbrahimMohammedOsmanMohammed' from 'origin'.
+
+C:\temp\hw4.2\cmps252_hw4.2 (IbrahimMohammedOsmanMohammed -> origin)
+λ git push -u origin IbrahimMohammedOsman
+error: src refspec IbrahimMohammedOsman does not match any
+error: failed to push some refs to 'https://github.com/ismoaldon7/cmps252_hw4.2.git'
+
+C:\temp\hw4.2\cmps252_hw4.2 (IbrahimMohammedOsmanMohammed -> origin)
+λ git branch IbrahimMohammedOsman
+
+C:\temp\hw4.2\cmps252_hw4.2 (IbrahimMohammedOsmanMohammed -> origin)
+λ git checkout IbrahimMohammedOsman
+Switched to branch 'IbrahimMohammedOsman'
+M       bin/.gitignore
+M       src/cmps252/HW4_2/Customer.java
+M       src/cmps252/HW4_2/FileParser.java
+M       src/cmps252/HW4_2/UnitTesting/Configuration.java
+
+C:\temp\hw4.2\cmps252_hw4.2 (IbrahimMohammedOsman)
+λ git push -u origin IbrahimMohammedOsman
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'IbrahimMohammedOsman' on GitHub by visiting:
+remote:      https://github.com/ismoaldon7/cmps252_hw4.2/pull/new/IbrahimMohammedOsman
+remote:
+To https://github.com/ismoaldon7/cmps252_hw4.2.git
+ * [new branch]      IbrahimMohammedOsman -> IbrahimMohammedOsman
+Branch 'IbrahimMohammedOsman' set up to track remote branch 'IbrahimMohammedOsman' from 'origin'.
+
+C:\temp\hw4.2\cmps252_hw4.2 (IbrahimMohammedOsman -> origin)
+λ
