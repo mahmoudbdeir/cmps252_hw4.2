@@ -49,10 +49,10 @@ public class Customer {
 	public String getWeb() {
 		return Web;
 	}
-	public Customer(String firstName, String lastName, String company, String address, String city, String county,
+	public Customer(String firstname, String lastName, String company, String address, String city, String county,
 			String state, String zIP, String phone, String fax, String email, String web) {
 		super();
-		FirstName = firstName;
+		FirstName = firstname;
 		LastName = lastName;
 		Company = company;
 		Address = address;
